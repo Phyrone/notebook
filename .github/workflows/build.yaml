@@ -5,6 +5,8 @@ jobs:
   client:
     name: Build Client ${{ matrix.name }}
     strategy:
+      # Need to know if only one target or all cannot be built (except for main)
+      fail-fast: ${{ github.ref == 'refs/heads/main' }}
       matrix:
         include:
           - runs-on: ubuntu-22.04
@@ -43,6 +45,8 @@ jobs:
           targets: ${{ matrix.targets || ''}}
       - name: Rust Cache
         uses: Swatinem/rust-cache@v2
+        with:
+          cache-targets: true
       - name: 'Linux: Install dependencies'
         if: matrix.runs-on == 'ubuntu-22.04' || matrix.runs-on == 'ubuntu-latest'
         run: |
