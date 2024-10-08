@@ -1,6 +1,9 @@
 on:
   push: { }
 name: Build
+concurrency:
+  cancel-in-progress: true
+  group: ${{ github.workflow }}-${{ github.ref }}
 jobs:
   client:
     name: Build Client ${{ matrix.name }}
