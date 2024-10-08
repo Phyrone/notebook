@@ -3,14 +3,57 @@ on:
 name: Build
 jobs:
   client:
-    name: Build Client
+    name: Build Client ${{ matrix.name }}
     strategy:
       matrix:
-        PLATFORM:
+        include:
           - runs-on: ubuntu-latest
+            args: '--target x86_64-unknown-linux-gnu'
+            name: 'Linux x86 64-bit'
           - runs-on: macos-latest
+            args: '--target universal-apple-darwin'
+            targets: 'x86_64-apple-darwin,aarch64-apple-darwin'
+            name: 'MacOS Universal'
           - runs-on: windows-latest
-    runs-on: ${{ matrix.PLATFORM.runs-on }}
+            args: '--target x86_64-pc-windows-msvc'
+            name: 'Windows x86 64-bit'
+          # TODO linux arm64
+          # TODO windows arm64
+
+    permissions:
+      contents: write
+    runs-on: ${{ matrix.runs-on }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Setup Pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          package_json_file: 'app/package.json'
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 21
+          cache: 'pnpm'
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+      - name: Setup Rust
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: ${{ matrix.targets || ''}}
+      - name: Rust Cache
+        uses: Swatinem/rust-cache@v2
+      - name: 'Linux: Install dependencies'
+        if: matrix.runs-on == 'ubuntu-latest'
+        run: sudo apt-get update sudo && apt-get install -y libwebkit2gtk-4.1-dev libappindicator3
+      - name: Build
+        working-directory: app
+        run: pnpm run tauri build ${{ matrix.args }}
+      - name: Build
+        uses: tauri-apps/tauri-action@v0
+        with:
+          appName: "Notbook"
+          # TODO release if tag
+          includeRelease: true
+          projectPath: 'app'
+          args: ${{ matrix.args || '' }}
