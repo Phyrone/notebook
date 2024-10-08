@@ -78,6 +78,13 @@ jobs:
           cache: 'pnpm'
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
+      - name: Check
+        working-directory: app
+        run: pnpm check
       - name: Build
         working-directory: app
         run: pnpm build
+      - name: Lint
+        working-directory: app
+        continue-on-error: true
+        run: pnpm lint
