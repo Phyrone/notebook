@@ -46,6 +46,7 @@ jobs:
       - name: Rust Cache
         uses: Swatinem/rust-cache@v2
         with:
+          prefix-key: 'v0-rust-${{ matrix.runs-on }}'
           cache-targets: true
       - name: 'Linux: Install dependencies'
         if: matrix.runs-on == 'ubuntu-22.04' || matrix.runs-on == 'ubuntu-latest'
@@ -55,7 +56,7 @@ jobs:
       - name: Build
         uses: tauri-apps/tauri-action@v0
         with:
-          appName: "Notbook"
+          appName: "Notebook"
           # TODO release if tag
           includeRelease: true
           projectPath: 'app'
