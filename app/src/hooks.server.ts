@@ -14,7 +14,12 @@ const set_html_locale: Handle = async ({ event, resolve }) => {
 	locals.locale = negotiator.language(locales);
 
 	return resolve(event, {
-		async transformPageChunk({ html }: { html: string; done: boolean }): Promise<string | undefined> {
+		async transformPageChunk({
+			html
+		}: {
+			html: string;
+			done: boolean;
+		}): Promise<string | undefined> {
 			if (!transformed && html.includes('%app.locale%')) {
 				//replace first occurrence of %app.locale% with the locale
 				html = html.replace('%app.locale%', locals.locale ?? 'en');
