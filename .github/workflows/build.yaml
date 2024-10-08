@@ -1,0 +1,90 @@
+on:
+  push: { }
+name: Build
+jobs:
+  client:
+    name: Build Client ${{ matrix.name }}
+    strategy:
+      # Need to know if only one target or all cannot be built (except for main)
+      fail-fast: ${{ github.ref == 'refs/heads/main' }}
+      matrix:
+        include:
+          - runs-on: ubuntu-22.04
+            args: '--target x86_64-unknown-linux-gnu'
+            name: 'Linux x86 64-bit'
+          - runs-on: macos-latest
+            args: '--target universal-apple-darwin'
+            targets: 'x86_64-apple-darwin,aarch64-apple-darwin'
+            name: 'MacOS Universal'
+          - runs-on: windows-latest
+            args: '--target x86_64-pc-windows-msvc'
+            name: 'Windows x86 64-bit'
+          # TODO linux arm64
+          # TODO windows arm64
+
+    permissions:
+      contents: write
+    runs-on: ${{ matrix.runs-on }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          package_json_file: 'app/package.json'
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 'lts/*'
+          cache: 'pnpm'
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+      - name: Setup Rust
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: ${{ matrix.targets || ''}}
+      - name: Rust Cache
+        uses: Swatinem/rust-cache@v2
+        with:
+          prefix-key: 'v0-rust-${{ matrix.runs-on }}'
+          cache-targets: true
+      - name: 'Linux: Install dependencies'
+        if: matrix.runs-on == 'ubuntu-22.04' || matrix.runs-on == 'ubuntu-latest'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libwebkit2gtk-4.1-dev libappindicator3-dev librsvg2-dev patchelf
+      - name: Build
+        uses: tauri-apps/tauri-action@v0
+        with:
+          appName: "Notebook"
+          # TODO release if tag
+          includeRelease: true
+          projectPath: 'app'
+          args: ${{ matrix.args || '' }}
+  app:
+    name: Build App
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          package_json_file: 'app/package.json'
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 'lts/*'
+          cache: 'pnpm'
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+      - name: Check
+        working-directory: app
+        run: pnpm check
+      - name: Build
+        working-directory: app
+        run: pnpm build
+      - name: Lint
+        working-directory: app
+        continue-on-error: true
+        run: pnpm lint

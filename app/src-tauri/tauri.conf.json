@@ -1,7 +1,7 @@
 {
-	"$schema": "https://schema.tauri.app/config/2.0.0-rc",
-	"productName": "app",
-	"version": "0.1.0",
+	"$schema": "https://schema.tauri.app/config/2.0.2",
+	"productName": "notebook",
+	"version": "0.0.1",
 	"identifier": "de.phyrone.notebook",
 	"build": {
 		"beforeDevCommand": "pnpm dev",
