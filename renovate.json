@@ -4,5 +4,8 @@
     "config:recommended"
   ],
   "commitMessagePrefix": "⬆\uFE0F",
-  "rebaseWhen": "behind-base-branch"
+  "rebaseWhen": "behind-base-branch",
+  "automerge": true,
+  "automergeStrategy": "rebase",
+  "pruneBranchAfterAutomerge": true
 }
