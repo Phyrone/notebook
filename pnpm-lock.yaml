@@ -58,7 +58,7 @@ importers:
         version: 0.441.0(svelte@4.2.19)
       maska:
         specifier: ^3.0.2
-        version: 3.0.2
+        version: 3.0.3
       ms:
         specifier: ^2.1.3
         version: 2.1.3
@@ -2153,8 +2153,8 @@ packages:
     resolution: {integrity: sha512-g3FeP20LNwhALb/6Cz6Dd4F2ngze0jz7tbzrD2wAV+o9FeNHe4rL+yK2md0J/fiSf1sa1ADhXqi5+oVwOM/eGw==}
     engines: {node: '>=8'}
 
-  maska@3.0.2:
-    resolution: {integrity: sha512-onh3JCFrkUTFrrhhDpfQZGwQ830zeEUEVbuQDZpLzY/JXJ5QR+hQ6FJ7lcw1NikAixtpGXkxxC+teO5glT3Vyw==}
+  maska@3.0.3:
+    resolution: {integrity: sha512-ItFbuqVeBKk1JmC4QCRxKeNaX+Ym/oMUYZVXwvAPKAwMeO4bYZpIGjNWOcZy+L8YXQaPvCZ68+5eYpGRdyaA8w==}
 
   matcher@5.0.0:
     resolution: {integrity: sha512-s2EMBOWtXFc8dgqvoAzKJXxNHibcdJMV0gwqKUaw9E2JBJuGUK7DrNKrA6g/i+v72TT16+6sVm5mS3thaMLQUw==}
@@ -4854,7 +4854,7 @@ snapshots:
     dependencies:
       semver: 6.3.1
 
-  maska@3.0.2: {}
+  maska@3.0.3: {}
 
   matcher@5.0.0:
     dependencies:
