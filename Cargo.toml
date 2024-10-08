@@ -1,0 +1,16 @@
+[workspace]
+resolver = "2"
+members = [
+    "app/src-tauri"
+    , "modules/app-node-natives"]
+
+[workspace.package]
+version = "0.0.1"
+edition = "2021"
+
+[workspace.dependencies]
+napi = { version = "2.12.2", default-features = false, features = ["napi4", "full"] }
+napi-derive = "2.12.2"
+
+
+napi-build = "2.0.1"

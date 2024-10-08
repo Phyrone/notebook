@@ -1,0 +1,20 @@
+{
+	"version": "7",
+	"dialect": "postgresql",
+	"entries": [
+		{
+			"idx": 0,
+			"version": "7",
+			"when": 1727444917160,
+			"tag": "0000_organic_pestilence",
+			"breakpoints": true
+		},
+		{
+			"idx": 1,
+			"version": "7",
+			"when": 1727610799949,
+			"tag": "0001_complex_mercury",
+			"breakpoints": true
+		}
+	]
+}

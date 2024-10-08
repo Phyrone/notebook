@@ -1,0 +1,1 @@
+ALTER TABLE "user" ALTER COLUMN "session" SET DATA TYPE bytea;

@@ -1,0 +1,15 @@
+{
+  "name": "app-node-natives-darwin-universal",
+  "version": "0.0.0",
+  "os": [
+    "darwin"
+  ],
+  "main": "app-node-natives.darwin-universal.node",
+  "files": [
+    "app-node-natives.darwin-universal.node"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">= 10"
+  }
+}
