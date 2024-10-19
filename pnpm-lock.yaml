@@ -67,7 +67,7 @@ importers:
         version: 5.0.7
       negotiator:
         specifier: ^0.6.3
-        version: 0.6.3
+        version: 0.6.4
       node-cache:
         specifier: ^5.1.2
         version: 5.1.2
@@ -2328,8 +2328,8 @@ packages:
   natural-compare-lite@1.4.0:
     resolution: {integrity: sha512-Tj+HTDSJJKaZnfiuw+iaF9skdPpTo2GtEly5JHnWV/hfv2Qj/9RKsGISQtLh2ox3l5EAGw487hnBee0sIJ6v2g==}
 
-  negotiator@0.6.3:
-    resolution: {integrity: sha512-+EUsqGPLsM+j/zdChZjsnX51g4XrHFOIXwfnCVPGlQk/k5giakcKsuxCObBRu6DSm9opw/O6slWbJdghQM4bBg==}
+  negotiator@0.6.4:
+    resolution: {integrity: sha512-myRT3DiWPHqho5PrJaIRyaMv2kgYf0mUVgBNOYMuCH5Ki1yEiQaf/ZJuQ62nvpc44wL5WDbTX7yGJi1Neevw8w==}
     engines: {node: '>= 0.6'}
 
   node-addon-api@7.1.1:
@@ -5000,7 +5000,7 @@ snapshots:
 
   natural-compare-lite@1.4.0: {}
 
-  negotiator@0.6.3: {}
+  negotiator@0.6.4: {}
 
   node-addon-api@7.1.1: {}
 
