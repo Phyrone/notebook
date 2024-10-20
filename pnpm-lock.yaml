@@ -22,7 +22,7 @@ importers:
         version: 0.1.1(tailwindcss@3.4.14)
       '@tauri-apps/api':
         specifier: '>=2.0.0-rc.0'
-        version: 2.0.2
+        version: 2.0.3
       '@tauri-apps/plugin-shell':
         specifier: '>=2.0.0-rc.0'
         version: 2.0.1
@@ -1020,8 +1020,8 @@ packages:
     peerDependencies:
       tailwindcss: '>=3.2.0'
 
-  '@tauri-apps/api@2.0.2':
-    resolution: {integrity: sha512-3wSwmG+1kr6WrgAFKK5ijkNFPp8TT3FLj3YHUb5EwMO+3FxX4uWlfSWkeeBy+Kc1RsKzugtYLuuya+98Flj+3w==}
+  '@tauri-apps/api@2.0.3':
+    resolution: {integrity: sha512-840qk6n8rbXBXMA5/aAgTYsg5JAubKO0nXw5wf7IzGnUuYKGbB4oFBIZtXOIWy+E0kNTDI3qhq5iqsoMJfwp8g==}
 
   '@tauri-apps/cli-darwin-arm64@2.0.3':
     resolution: {integrity: sha512-jIsbxGWS+As1ZN7umo90nkql/ZAbrDK0GBT6UsgHSz5zSwwArICsZFFwE1pLZip5yoiV5mn3TGG2c1+v+0puzQ==}
@@ -3674,7 +3674,7 @@ snapshots:
     dependencies:
       tailwindcss: 3.4.14
 
-  '@tauri-apps/api@2.0.2': {}
+  '@tauri-apps/api@2.0.3': {}
 
   '@tauri-apps/cli-darwin-arm64@2.0.3':
     optional: true
@@ -3721,7 +3721,7 @@ snapshots:
 
   '@tauri-apps/plugin-shell@2.0.1':
     dependencies:
-      '@tauri-apps/api': 2.0.2
+      '@tauri-apps/api': 2.0.3
 
   '@types/cookie@0.6.0': {}
 
