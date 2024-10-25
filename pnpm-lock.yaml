@@ -43,10 +43,10 @@ importers:
         version: 16.4.5
       drizzle-orm:
         specifier: ^0.35.0
-        version: 0.35.3(@libsql/client-wasm@0.14.0)(postgres@3.4.4)
+        version: 0.35.3(@libsql/client-wasm@0.14.0)(postgres@3.4.5)
       drizzle-zod:
         specifier: ^0.5.1
-        version: 0.5.1(drizzle-orm@0.35.3(@libsql/client-wasm@0.14.0)(postgres@3.4.4))(zod@3.23.8)
+        version: 0.5.1(drizzle-orm@0.35.3(@libsql/client-wasm@0.14.0)(postgres@3.4.5))(zod@3.23.8)
       events:
         specifier: ^3.3.0
         version: 3.3.0
@@ -73,7 +73,7 @@ importers:
         version: 5.1.2
       postgres:
         specifier: ^3.4.4
-        version: 3.4.4
+        version: 3.4.5
       pouchdb:
         specifier: ^9.0.0
         version: 9.0.0
@@ -2527,8 +2527,8 @@ packages:
     resolution: {integrity: sha512-56rxCq7G/XfB4EkXq9Egn5GCqugWvDFjafDOThIdMBsI15iqPqR5r15TfSr1YPYeEI19YeaXMCbY6u88Y76GLQ==}
     engines: {node: ^10 || ^12 || >=14}
 
-  postgres@3.4.4:
-    resolution: {integrity: sha512-IbyN+9KslkqcXa8AO9fxpk97PA4pzewvpi2B3Dwy9u4zpV32QicaEdgmF3eSQUzdRk7ttDHQejNgAEr4XoeH4A==}
+  postgres@3.4.5:
+    resolution: {integrity: sha512-cDWgoah1Gez9rN3H4165peY9qfpEo+SA61oQv65O3cRUE1pOEoJWwddwcqKE8XZYjbblOJlYDlLV4h67HrEVDg==}
     engines: {node: '>=12'}
 
   pouchdb@9.0.0:
@@ -4346,15 +4346,15 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  drizzle-orm@0.35.3(@libsql/client-wasm@0.14.0)(postgres@3.4.4):
+  drizzle-orm@0.35.3(@libsql/client-wasm@0.14.0)(postgres@3.4.5):
     dependencies:
       '@libsql/client-wasm': 0.14.0
     optionalDependencies:
-      postgres: 3.4.4
+      postgres: 3.4.5
 
-  drizzle-zod@0.5.1(drizzle-orm@0.35.3(@libsql/client-wasm@0.14.0)(postgres@3.4.4))(zod@3.23.8):
+  drizzle-zod@0.5.1(drizzle-orm@0.35.3(@libsql/client-wasm@0.14.0)(postgres@3.4.5))(zod@3.23.8):
     dependencies:
-      drizzle-orm: 0.35.3(@libsql/client-wasm@0.14.0)(postgres@3.4.4)
+      drizzle-orm: 0.35.3(@libsql/client-wasm@0.14.0)(postgres@3.4.5)
       zod: 3.23.8
 
   eastasianwidth@0.2.0: {}
@@ -5172,7 +5172,7 @@ snapshots:
       picocolors: 1.1.0
       source-map-js: 1.2.1
 
-  postgres@3.4.4: {}
+  postgres@3.4.5: {}
 
   pouchdb@9.0.0:
     dependencies:
