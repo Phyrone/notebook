@@ -81,8 +81,8 @@ importers:
         specifier: ^2.0.1
         version: 2.0.1(svelte@4.2.19)
       svelte-jsoneditor:
-        specifier: ^1.0.4
-        version: 1.1.1(@lezer/common@1.2.3)(svelte@4.2.19)
+        specifier: ^2.0.0
+        version: 2.0.0(@lezer/common@1.2.3)(svelte@4.2.19)
       swapy:
         specifier: ^0.4.0
         version: 0.4.2
@@ -2663,6 +2663,11 @@ packages:
     engines: {node: '>=14.0.0'}
     hasBin: true
 
+  sass@1.80.4:
+    resolution: {integrity: sha512-rhMQ2tSF5CsuuspvC94nPM9rToiAFw2h3JTrLlgmNw1MH79v8Cr3DH6KF6o6r+8oofY3iYVPUf66KzC8yuVN1w==}
+    engines: {node: '>=14.0.0'}
+    hasBin: true
+
   saxes@6.0.0:
     resolution: {integrity: sha512-xAg7SOnEhrm5zI3puOOKyy1OMcMlIJZYNJY7xLBwSze0UjhPLnWfj2GF2EpT0jmzaJKIWKHLsaSSajf35bcYnA==}
     engines: {node: '>=v12.22.7'}
@@ -2803,10 +2808,10 @@ packages:
     peerDependencies:
       svelte: ^3.19.0 || ^4.0.0
 
-  svelte-jsoneditor@1.1.1:
-    resolution: {integrity: sha512-0zHs9PLv2fz1pMKDBwfyhN3j4fpwR7TKSLHlCsPpFurbx4afscVlF81zTVpPm3DoTX/y9RcBSS3S9SAejotuVw==}
+  svelte-jsoneditor@2.0.0:
+    resolution: {integrity: sha512-ZWDXcDcfl8aBInSA9c6wJqoTLuADU6yVlnlsEY3V8J4rI9kGKk87TVaRWI7jmOcWgdkwH1vWk4GhZmjo1wNqcA==}
     peerDependencies:
-      svelte: ^3.54.0 || ^4.0.0
+      svelte: ^3.54.0 || ^4.0.0 || ^5.0.0
 
   svelte-select@5.8.3:
     resolution: {integrity: sha512-nQsvflWmTCOZjssdrNptzfD1Ok45hHVMTL5IHay5DINk7dfu5Er+8KsVJnZMJdSircqtR0YlT4YkCFlxOUhVPA==}
@@ -5329,6 +5334,13 @@ snapshots:
       immutable: 4.3.7
       source-map-js: 1.2.1
 
+  sass@1.80.4:
+    dependencies:
+      '@parcel/watcher': 2.4.1
+      chokidar: 4.0.1
+      immutable: 4.3.7
+      source-map-js: 1.2.1
+
   saxes@6.0.0:
     dependencies:
       xmlchars: 2.2.0
@@ -5475,7 +5487,7 @@ snapshots:
     dependencies:
       svelte: 4.2.19
 
-  svelte-jsoneditor@1.1.1(@lezer/common@1.2.3)(svelte@4.2.19):
+  svelte-jsoneditor@2.0.0(@lezer/common@1.2.3)(svelte@4.2.19):
     dependencies:
       '@codemirror/autocomplete': 6.18.1(@codemirror/language@6.10.3)(@codemirror/state@6.4.1)(@codemirror/view@6.34.1)(@lezer/common@1.2.3)
       '@codemirror/commands': 6.7.1
@@ -5501,7 +5513,7 @@ snapshots:
       lodash-es: 4.17.21
       memoize-one: 6.0.0
       natural-compare-lite: 1.4.0
-      sass: 1.80.3
+      sass: 1.80.4
       svelte: 4.2.19
       svelte-awesome: 3.3.5(svelte@4.2.19)
       svelte-select: 5.8.3
