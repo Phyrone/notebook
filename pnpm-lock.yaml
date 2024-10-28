@@ -94,7 +94,7 @@ importers:
         version: 3.23.8
       zod-openapi:
         specifier: ^3.0.1
-        version: 3.1.1(zod@3.23.8)
+        version: 3.2.0(zod@3.23.8)
     devDependencies:
       '@sveltejs/adapter-node':
         specifier: ^5.2.3
@@ -3065,8 +3065,8 @@ packages:
     peerDependencies:
       zod: ^3.13.2
 
-  zod-openapi@3.1.1:
-    resolution: {integrity: sha512-jn5udnrGTAmTY7nj/E6ggKBsqIi9Vzj5u0RQpDyOOpzmz2ijcBssSeEjnQFbriqG2PY2JJBP5Gi4umRrhVxghQ==}
+  zod-openapi@3.2.0:
+    resolution: {integrity: sha512-JZULa3vQ/KK5qT4+KvOIxVYmDi4nFi+AoyL/kE2k3BNpMrAOC7SaJYWPqtS8CBeidALbeuc98bldnP75uA+Ktg==}
     engines: {node: '>=18'}
     peerDependencies:
       zod: ^3.21.4
@@ -5747,7 +5747,7 @@ snapshots:
       colorette: 2.0.20
       zod: 3.23.8
 
-  zod-openapi@3.1.1(zod@3.23.8):
+  zod-openapi@3.2.0(zod@3.23.8):
     dependencies:
       zod: 3.23.8
 
