@@ -131,7 +131,7 @@ importers:
         version: 4.12.14(postcss@8.4.47)
       drizzle-kit:
         specifier: ^0.27.0
-        version: 0.27.1
+        version: 0.27.2
       jsonwebtoken:
         specifier: ^9.0.2
         version: 9.0.2
@@ -1608,8 +1608,8 @@ packages:
   double-ended-queue@2.1.0-0:
     resolution: {integrity: sha512-+BNfZ+deCo8hMNpDqDnvT+c0XpJ5cUa6mqYq89bho2Ifze4URTqRkcwR399hWoTrTkbZ/XJYDgP6rc7pRgffEQ==}
 
-  drizzle-kit@0.27.1:
-    resolution: {integrity: sha512-4BNA0T2blN+jW5wSwhtc+FIlCMuxYSMWCnYYdOBi5rttwq8aVXRUid0d0NCzcBKtZQSPZGAUxy+TXr7Q1OgEug==}
+  drizzle-kit@0.27.2:
+    resolution: {integrity: sha512-F6cFZ1wxa9XzFyeeQsp/0/lIzUbDuQjS8/njpYBDWa+wdWmXuY+Z/X2hHFK/9PGHZkv3c9mER+mVWfKlp/B6Vw==}
     hasBin: true
 
   drizzle-orm@0.36.0:
@@ -4361,7 +4361,7 @@ snapshots:
 
   double-ended-queue@2.1.0-0: {}
 
-  drizzle-kit@0.27.1:
+  drizzle-kit@0.27.2:
     dependencies:
       '@drizzle-team/brocli': 0.10.2
       '@esbuild-kit/esm-loader': 2.6.5
