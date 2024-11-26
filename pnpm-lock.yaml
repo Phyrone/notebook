@@ -140,10 +140,10 @@ importers:
         version: 8.4.49
       prettier:
         specifier: ^3.3.3
-        version: 3.3.3
+        version: 3.4.0
       prettier-plugin-svelte:
         specifier: ^3.2.7
-        version: 3.3.1(prettier@3.3.3)(svelte@4.2.19)
+        version: 3.3.1(prettier@3.4.0)(svelte@4.2.19)
       sass:
         specifier: ^1.79.2
         version: 1.81.0
@@ -2651,8 +2651,8 @@ packages:
       prettier: ^3.0.0
       svelte: ^3.2.0 || ^4.0.0-next.0 || ^5.0.0-next.0
 
-  prettier@3.3.3:
-    resolution: {integrity: sha512-i2tDNA0O5IrMO757lfrdQZCc2jPNDVntV0m/+4whiDfWaTKfMNgR7Qz0NAeGz/nRqF4m5/6CLzbP4/liHt12Ew==}
+  prettier@3.4.0:
+    resolution: {integrity: sha512-/OXNZcLyWkfo13ofOW5M7SLh+k5pnIs07owXK2teFpnfaOEcycnSy7HQxldaVX1ZP/7Q8oO1eDuQJNwbomQq5Q==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -5378,12 +5378,12 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
-  prettier-plugin-svelte@3.3.1(prettier@3.3.3)(svelte@4.2.19):
+  prettier-plugin-svelte@3.3.1(prettier@3.4.0)(svelte@4.2.19):
     dependencies:
-      prettier: 3.3.3
+      prettier: 3.4.0
       svelte: 4.2.19
 
-  prettier@3.3.3: {}
+  prettier@3.4.0: {}
 
   pretty-ms@9.1.0:
     dependencies:
