@@ -82,7 +82,7 @@ importers:
         version: 2.0.1(svelte@4.2.19)
       svelte-jsoneditor:
         specifier: ^2.0.0
-        version: 2.1.0(@lezer/common@1.2.3)(svelte@4.2.19)
+        version: 2.2.0(@lezer/common@1.2.3)(svelte@4.2.19)
       swapy:
         specifier: ^0.4.0
         version: 0.4.2
@@ -203,20 +203,20 @@ packages:
   '@codemirror/lang-json@6.0.1':
     resolution: {integrity: sha512-+T1flHdgpqDDlJZ2Lkil/rLiRy684WMLc74xUnjJH48GQdfJo/pudlTRreZmKwzP8/tGdKf83wlbAdOCzlJOGQ==}
 
-  '@codemirror/language@6.10.3':
-    resolution: {integrity: sha512-kDqEU5sCP55Oabl6E7m5N+vZRoc0iWqgDVhEKifcHzPzjqCegcO4amfrYVL9PmPZpl4G0yjkpTpUO/Ui8CzO8A==}
+  '@codemirror/language@6.10.4':
+    resolution: {integrity: sha512-qjt7Wn/nxGuI278GYVlqE5V93Xn8ZQwzqZtgS0FaWr7K2yWgd5/FlBNqNi4jtUvBVvWJzAGfnggIlpyjTOaF4A==}
 
-  '@codemirror/lint@6.8.2':
-    resolution: {integrity: sha512-PDFG5DjHxSEjOXk9TQYYVjZDqlZTFaDBfhQixHnQOEVDDNHUbEh/hstAjcQJaA6FQdZTD1hquXTK0rVBLADR1g==}
+  '@codemirror/lint@6.8.3':
+    resolution: {integrity: sha512-GSGfKxCo867P7EX1k2LoCrjuQFeqVgPGRRsSl4J4c0KMkD+k1y6WYvTQkzv0iZ8JhLJDujEvlnMchv4CZQLh3Q==}
 
-  '@codemirror/search@6.5.7':
-    resolution: {integrity: sha512-6+iLsXvITWKHYlkgHPCs/qiX4dNzn8N78YfhOFvPtPYCkuXqZq10rAfsUMhOq7O/1VjJqdXRflyExlfVcu/9VQ==}
+  '@codemirror/search@6.5.8':
+    resolution: {integrity: sha512-PoWtZvo7c1XFeZWmmyaOp2G0XVbOnm+fJzvghqGAktBW3cufwJUWvSCcNG0ppXiBEM05mZu6RhMtXPv2hpllig==}
 
   '@codemirror/state@6.4.1':
     resolution: {integrity: sha512-QkEyUiLhsJoZkbumGZlswmAhA7CBU02Wrz7zvH4SrcifbsqwlXShVXg65f3v/ts57W3dqyamEriMhij1Z3Zz4A==}
 
-  '@codemirror/view@6.34.3':
-    resolution: {integrity: sha512-Ph5d+u8DxIeSgssXEakaakImkzBV4+slwIbcxl9oc9evexJhImeu/G8TK7+zp+IFK9KuJ0BdSn6kTBJeH2CHvA==}
+  '@codemirror/view@6.35.0':
+    resolution: {integrity: sha512-I0tYy63q5XkaWsJ8QRv5h6ves7kvtrBWjBcnf/bzohFJQc5c14a1AQRdE8QpPF9eMp5Mq2FMm59TCj1gDfE7kw==}
 
   '@drizzle-team/brocli@0.10.2':
     resolution: {integrity: sha512-z33Il7l5dKjUgGULTqBsQBQwckHh5AbIuxhdsIxDDiZAzBOrZO6q9ogcWC65kU382AfynTfgNumVcNIjuIua6w==}
@@ -2906,8 +2906,8 @@ packages:
     peerDependencies:
       svelte: ^3.19.0 || ^4.0.0
 
-  svelte-jsoneditor@2.1.0:
-    resolution: {integrity: sha512-ytnh8w2w/mSvpPCv2ijDgft4iBv5JdutrwsLaD+ERyt1nDMB+cfBtLdg7c7bLWg2bGdVeNmfKdmWUJf4hZPixA==}
+  svelte-jsoneditor@2.2.0:
+    resolution: {integrity: sha512-mWxoqVWrfHmbp7QNBTymVCsrbJxbYzPGWRFyri7sUFu2YJL6IllocDhXe90YOA+M1Wan/d2gaxbeD/o7HfzDFA==}
     peerDependencies:
       svelte: ^3.54.0 || ^4.0.0 || ^5.0.0
 
@@ -3193,49 +3193,49 @@ snapshots:
     dependencies:
       regenerator-runtime: 0.14.1
 
-  '@codemirror/autocomplete@6.18.3(@codemirror/language@6.10.3)(@codemirror/state@6.4.1)(@codemirror/view@6.34.3)(@lezer/common@1.2.3)':
+  '@codemirror/autocomplete@6.18.3(@codemirror/language@6.10.4)(@codemirror/state@6.4.1)(@codemirror/view@6.35.0)(@lezer/common@1.2.3)':
     dependencies:
-      '@codemirror/language': 6.10.3
+      '@codemirror/language': 6.10.4
       '@codemirror/state': 6.4.1
-      '@codemirror/view': 6.34.3
+      '@codemirror/view': 6.35.0
       '@lezer/common': 1.2.3
 
   '@codemirror/commands@6.7.1':
     dependencies:
-      '@codemirror/language': 6.10.3
+      '@codemirror/language': 6.10.4
       '@codemirror/state': 6.4.1
-      '@codemirror/view': 6.34.3
+      '@codemirror/view': 6.35.0
       '@lezer/common': 1.2.3
 
   '@codemirror/lang-json@6.0.1':
     dependencies:
-      '@codemirror/language': 6.10.3
+      '@codemirror/language': 6.10.4
       '@lezer/json': 1.0.2
 
-  '@codemirror/language@6.10.3':
+  '@codemirror/language@6.10.4':
     dependencies:
       '@codemirror/state': 6.4.1
-      '@codemirror/view': 6.34.3
+      '@codemirror/view': 6.35.0
       '@lezer/common': 1.2.3
       '@lezer/highlight': 1.2.1
       '@lezer/lr': 1.4.2
       style-mod: 4.1.2
 
-  '@codemirror/lint@6.8.2':
+  '@codemirror/lint@6.8.3':
     dependencies:
       '@codemirror/state': 6.4.1
-      '@codemirror/view': 6.34.3
+      '@codemirror/view': 6.35.0
       crelt: 1.0.6
 
-  '@codemirror/search@6.5.7':
+  '@codemirror/search@6.5.8':
     dependencies:
       '@codemirror/state': 6.4.1
-      '@codemirror/view': 6.34.3
+      '@codemirror/view': 6.35.0
       crelt: 1.0.6
 
   '@codemirror/state@6.4.1': {}
 
-  '@codemirror/view@6.34.3':
+  '@codemirror/view@6.35.0':
     dependencies:
       '@codemirror/state': 6.4.1
       style-mod: 4.1.2
@@ -3662,11 +3662,11 @@ snapshots:
 
   '@polka/url@1.0.0-next.28': {}
 
-  '@replit/codemirror-indentation-markers@6.5.3(@codemirror/language@6.10.3)(@codemirror/state@6.4.1)(@codemirror/view@6.34.3)':
+  '@replit/codemirror-indentation-markers@6.5.3(@codemirror/language@6.10.4)(@codemirror/state@6.4.1)(@codemirror/view@6.35.0)':
     dependencies:
-      '@codemirror/language': 6.10.3
+      '@codemirror/language': 6.10.4
       '@codemirror/state': 6.4.1
-      '@codemirror/view': 6.34.3
+      '@codemirror/view': 6.35.0
 
   '@rollup/plugin-commonjs@28.0.1(rollup@4.24.0)':
     dependencies:
@@ -4354,11 +4354,11 @@ snapshots:
       estree-walker: 3.0.3
       periscopic: 3.1.0
 
-  codemirror-wrapped-line-indent@1.0.8(@codemirror/language@6.10.3)(@codemirror/state@6.4.1)(@codemirror/view@6.34.3):
+  codemirror-wrapped-line-indent@1.0.8(@codemirror/language@6.10.4)(@codemirror/state@6.4.1)(@codemirror/view@6.35.0):
     dependencies:
-      '@codemirror/language': 6.10.3
+      '@codemirror/language': 6.10.4
       '@codemirror/state': 6.4.1
-      '@codemirror/view': 6.34.3
+      '@codemirror/view': 6.35.0
 
   color-convert@2.0.1:
     dependencies:
@@ -5666,23 +5666,23 @@ snapshots:
     dependencies:
       svelte: 4.2.19
 
-  svelte-jsoneditor@2.1.0(@lezer/common@1.2.3)(svelte@4.2.19):
+  svelte-jsoneditor@2.2.0(@lezer/common@1.2.3)(svelte@4.2.19):
     dependencies:
-      '@codemirror/autocomplete': 6.18.3(@codemirror/language@6.10.3)(@codemirror/state@6.4.1)(@codemirror/view@6.34.3)(@lezer/common@1.2.3)
+      '@codemirror/autocomplete': 6.18.3(@codemirror/language@6.10.4)(@codemirror/state@6.4.1)(@codemirror/view@6.35.0)(@lezer/common@1.2.3)
       '@codemirror/commands': 6.7.1
       '@codemirror/lang-json': 6.0.1
-      '@codemirror/language': 6.10.3
-      '@codemirror/lint': 6.8.2
-      '@codemirror/search': 6.5.7
+      '@codemirror/language': 6.10.4
+      '@codemirror/lint': 6.8.3
+      '@codemirror/search': 6.5.8
       '@codemirror/state': 6.4.1
-      '@codemirror/view': 6.34.3
+      '@codemirror/view': 6.35.0
       '@fortawesome/free-regular-svg-icons': 6.7.1
       '@fortawesome/free-solid-svg-icons': 6.7.1
       '@jsonquerylang/jsonquery': 4.0.0
       '@lezer/highlight': 1.2.1
-      '@replit/codemirror-indentation-markers': 6.5.3(@codemirror/language@6.10.3)(@codemirror/state@6.4.1)(@codemirror/view@6.34.3)
+      '@replit/codemirror-indentation-markers': 6.5.3(@codemirror/language@6.10.4)(@codemirror/state@6.4.1)(@codemirror/view@6.35.0)
       ajv: 8.17.1
-      codemirror-wrapped-line-indent: 1.0.8(@codemirror/language@6.10.3)(@codemirror/state@6.4.1)(@codemirror/view@6.34.3)
+      codemirror-wrapped-line-indent: 1.0.8(@codemirror/language@6.10.4)(@codemirror/state@6.4.1)(@codemirror/view@6.35.0)
       diff-sequences: 29.6.3
       immutable-json-patch: 6.0.1
       jmespath: 0.16.0
