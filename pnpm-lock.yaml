@@ -37,7 +37,7 @@ importers:
         version: 2.2.2
       date-picker-svelte:
         specifier: ^2.13.0
-        version: 2.14.1(svelte@4.2.19)
+        version: 2.15.0(svelte@4.2.19)
       dotenv:
         specifier: ^16.4.5
         version: 16.4.5
@@ -1626,8 +1626,8 @@ packages:
   dataloader@2.2.2:
     resolution: {integrity: sha512-8YnDaaf7N3k/q5HnTJVuzSyLETjoZjVmHc4AeKAzOvKHEFQKcn64OKBfzHYtE9zGjctNM7V9I0MfnUVLpi7M5g==}
 
-  date-picker-svelte@2.14.1:
-    resolution: {integrity: sha512-7u6e432BLsqnXQ/p/jAZQ3uDceZzTF2rdxsqWcsRnTm3QxlypwajKRuPh6Un9cZo5HjQPQinG/RVwAN0jYsKFA==}
+  date-picker-svelte@2.15.0:
+    resolution: {integrity: sha512-qmauLs/KBSg/ntwMJdetSA6gYBsWRdfA0nJIywhSoTTBFvoRgL0dwZHO5nqrAAbmJdzl1SUNvzb9GDG3vTTkag==}
     peerDependencies:
       svelte: ^3.24.0 || ^4.0.0 || ^5.0.0
 
@@ -4460,7 +4460,7 @@ snapshots:
 
   dataloader@2.2.2: {}
 
-  date-picker-svelte@2.14.1(svelte@4.2.19):
+  date-picker-svelte@2.15.0(svelte@4.2.19):
     dependencies:
       svelte: 4.2.19
 
