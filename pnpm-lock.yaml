@@ -40,7 +40,7 @@ importers:
         version: 2.15.1(svelte@4.2.19)
       dotenv:
         specifier: ^16.4.5
-        version: 16.4.6
+        version: 16.4.7
       drizzle-orm:
         specifier: ^0.36.0
         version: 0.36.4(@libsql/client-wasm@0.14.0)(postgres@3.4.5)
@@ -1701,8 +1701,8 @@ packages:
   domutils@3.1.0:
     resolution: {integrity: sha512-H78uMmQtI2AhgDJjWeQmHwJJ2bLPD3GMmO7Zja/ZZh84wkm+4ut+IUnUdRa8uCGX88DiVx1j6FRe1XfxEgjEZA==}
 
-  dotenv@16.4.6:
-    resolution: {integrity: sha512-JhcR/+KIjkkjiU8yEpaB/USlzVi3i5whwOjpIRNGi9svKEXZSe+Qp6IWAjFjv+2GViAoDRCUv/QLNziQxsLqDg==}
+  dotenv@16.4.7:
+    resolution: {integrity: sha512-47qPchRCykZC03FhkYAhrvwU4xDBFIj1QPqaarj6mdM/hgUzfPHcpkHJOn3mJAufFeeAxAzeGsr5X0M4k6fLZQ==}
     engines: {node: '>=12'}
 
   double-ended-queue@2.1.0-0:
@@ -4524,7 +4524,7 @@ snapshots:
       domelementtype: 2.3.0
       domhandler: 5.0.3
 
-  dotenv@16.4.6: {}
+  dotenv@16.4.7: {}
 
   double-ended-queue@2.1.0-0: {}
 
