@@ -128,7 +128,7 @@ importers:
         version: 10.4.20(postcss@8.4.49)
       daisyui:
         specifier: ^4.12.10
-        version: 4.12.14(postcss@8.4.49)
+        version: 4.12.20(postcss@8.4.49)
       drizzle-kit:
         specifier: ^0.29.0
         version: 0.29.1
@@ -1618,8 +1618,8 @@ packages:
     resolution: {integrity: sha512-/fITjgjGU50vjQ4FH6eUoYu+iUoUKIXws2hL15JJpIR+BbTxaXQsMuuyjtNh2WqsSBS5nsaZHFsFecyw5CCAng==}
     engines: {node: '>=0.10.0'}
 
-  daisyui@4.12.14:
-    resolution: {integrity: sha512-hA27cdBasdwd4/iEjn+aidoCrRroDuo3G5W9NDKaVCJI437Mm/3eSL/2u7MkZ0pt8a+TrYF3aT2pFVemTS3how==}
+  daisyui@4.12.20:
+    resolution: {integrity: sha512-uHr3SQsd2yTjRdVuswTiqGFvZTxX0sGSBRa8JJdbKgmZCk/kRFh4B7Z2jg9vLIdwsHTHPyPgCkZadQo1ce0tAw==}
     engines: {node: '>=16.9.0'}
 
   data-urls@5.0.0:
@@ -4448,7 +4448,7 @@ snapshots:
     dependencies:
       array-find-index: 1.0.2
 
-  daisyui@4.12.14(postcss@8.4.49):
+  daisyui@4.12.20(postcss@8.4.49):
     dependencies:
       css-selector-tokenizer: 0.8.0
       culori: 3.3.0
