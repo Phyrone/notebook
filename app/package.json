@@ -36,7 +36,7 @@
 		"date-picker-svelte": "^2.13.0",
 		"dotenv": "^16.4.5",
 		"drizzle-orm": "^0.38.0",
-		"drizzle-zod": "^0.5.1",
+		"drizzle-zod": "^0.6.0",
 		"events": "^3.3.0",
 		"i18next": "^24.0.0",
 		"lucide-svelte": "^0.468.0",
