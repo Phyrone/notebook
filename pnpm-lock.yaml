@@ -46,7 +46,7 @@ importers:
         version: 0.38.0(@libsql/client-wasm@0.14.0)(postgres@3.4.5)
       drizzle-zod:
         specifier: ^0.6.0
-        version: 0.6.0(drizzle-orm@0.38.0(@libsql/client-wasm@0.14.0)(postgres@3.4.5))(zod@3.24.0)
+        version: 0.6.0(drizzle-orm@0.38.0(@libsql/client-wasm@0.14.0)(postgres@3.4.5))(zod@3.24.1)
       events:
         specifier: ^3.3.0
         version: 3.3.0
@@ -88,13 +88,13 @@ importers:
         version: 0.4.2
       znv:
         specifier: ^0.4.0
-        version: 0.4.0(zod@3.24.0)
+        version: 0.4.0(zod@3.24.1)
       zod:
         specifier: ^3.23.8
-        version: 3.24.0
+        version: 3.24.1
       zod-openapi:
         specifier: ^4.0.0
-        version: 4.1.0(zod@3.24.0)
+        version: 4.1.0(zod@3.24.1)
     devDependencies:
       '@sveltejs/adapter-node':
         specifier: ^5.2.3
@@ -3184,8 +3184,8 @@ packages:
     peerDependencies:
       zod: ^3.21.4
 
-  zod@3.24.0:
-    resolution: {integrity: sha512-Hz+wiY8yD0VLA2k/+nsg2Abez674dDGTai33SwNvMPuf9uIrBC9eFgIMQxBBbHFxVXi8W+5nX9DcAh9YNSQm/w==}
+  zod@3.24.1:
+    resolution: {integrity: sha512-muH7gBL9sI1nciMZV67X5fTKKBLtwpZ5VBp1vsOQzj1MhrBZ4wlVCm3gedKZWLp0Oyel8sIGfeiz54Su+OVT+A==}
 
 snapshots:
 
@@ -4538,10 +4538,10 @@ snapshots:
       '@libsql/client-wasm': 0.14.0
       postgres: 3.4.5
 
-  drizzle-zod@0.6.0(drizzle-orm@0.38.0(@libsql/client-wasm@0.14.0)(postgres@3.4.5))(zod@3.24.0):
+  drizzle-zod@0.6.0(drizzle-orm@0.38.0(@libsql/client-wasm@0.14.0)(postgres@3.4.5))(zod@3.24.1):
     dependencies:
       drizzle-orm: 0.38.0(@libsql/client-wasm@0.14.0)(postgres@3.4.5)
-      zod: 3.24.0
+      zod: 3.24.1
 
   eastasianwidth@0.2.0: {}
 
@@ -5947,13 +5947,13 @@ snapshots:
       y18n: 5.0.8
       yargs-parser: 21.1.1
 
-  znv@0.4.0(zod@3.24.0):
+  znv@0.4.0(zod@3.24.1):
     dependencies:
       colorette: 2.0.20
-      zod: 3.24.0
+      zod: 3.24.1
 
-  zod-openapi@4.1.0(zod@3.24.0):
+  zod-openapi@4.1.0(zod@3.24.1):
     dependencies:
-      zod: 3.24.0
+      zod: 3.24.1
 
-  zod@3.24.0: {}
+  zod@3.24.1: {}
