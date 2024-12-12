@@ -82,7 +82,7 @@ importers:
         version: 2.0.1(svelte@4.2.19)
       svelte-jsoneditor:
         specifier: ^2.0.0
-        version: 2.3.2(@lezer/common@1.2.3)(svelte@4.2.19)
+        version: 2.3.3(@lezer/common@1.2.3)(svelte@4.2.19)
       swapy:
         specifier: ^1.0.0
         version: 1.0.0
@@ -2916,8 +2916,8 @@ packages:
     peerDependencies:
       svelte: ^3.19.0 || ^4.0.0
 
-  svelte-jsoneditor@2.3.2:
-    resolution: {integrity: sha512-rOMx2tmh2+FZgzklcCXkTN7znl/aoK31LHhdUDZ2vY9mI+zavdA24ltfXKQ+n343iPTaunLzQ5w/UfDWgV4Kag==}
+  svelte-jsoneditor@2.3.3:
+    resolution: {integrity: sha512-Tz1iuSrehyYFq/dbW96ijBlbtN6zeUpXeVWX1vbBwh9d98m8QzcgAs3WQD9Hvm5iPmlxOSwXJV5j7XEqsuA52Q==}
     peerDependencies:
       svelte: ^3.54.0 || ^4.0.0 || ^5.0.0
 
@@ -5682,7 +5682,7 @@ snapshots:
     dependencies:
       svelte: 4.2.19
 
-  svelte-jsoneditor@2.3.2(@lezer/common@1.2.3)(svelte@4.2.19):
+  svelte-jsoneditor@2.3.3(@lezer/common@1.2.3)(svelte@4.2.19):
     dependencies:
       '@codemirror/autocomplete': 6.18.3(@codemirror/language@6.10.6)(@codemirror/state@6.5.0)(@codemirror/view@6.35.3)(@lezer/common@1.2.3)
       '@codemirror/commands': 6.7.1
