@@ -85,7 +85,7 @@ importers:
         version: 2.3.2(@lezer/common@1.2.3)(svelte@4.2.19)
       swapy:
         specifier: ^1.0.0
-        version: 1.0.0
+        version: 1.0.1
       znv:
         specifier: ^0.4.0
         version: 0.4.0(zod@3.24.1)
@@ -2949,8 +2949,8 @@ packages:
     resolution: {integrity: sha512-IY1rnGr6izd10B0A8LqsBfmlT5OILVuZ7XsI0vdGPEvuonFV7NYEUK4dAkm9Zg2q0Um92kYjTpS1CAP3Nh/KWw==}
     engines: {node: '>=16'}
 
-  swapy@1.0.0:
-    resolution: {integrity: sha512-X/lPNo3AH7chLltF/0J6I+zaTTZHXqekdz7hr7jjwjHiNn4oxNakU2EgRYRpulMk/EcLfTHIKAtdmL7ELqHubg==}
+  swapy@1.0.1:
+    resolution: {integrity: sha512-9l8yRtu4lPyz79vAMMMrYO3lUlOol00aoeC0UMjqTyel9/zGeZNUJRJsa08PooWKX1HvGCti9VQs89+Im1CSaw==}
 
   symbol-tree@3.2.4:
     resolution: {integrity: sha512-9QNk5KwDF+Bvz+PyObkmSYjI5ksVUYtjW7AU22r2NKcfLJcXp96hkDWU3+XndOsUb+AQ9QhfzfCT2O+CNWT5Tw==}
@@ -5770,7 +5770,7 @@ snapshots:
       magic-string: 0.30.11
       periscopic: 3.1.0
 
-  swapy@1.0.0: {}
+  swapy@1.0.1: {}
 
   symbol-tree@3.2.4: {}
 
