@@ -85,7 +85,7 @@ importers:
         version: 2.3.2(@lezer/common@1.2.3)(svelte@4.2.19)
       swapy:
         specifier: ^1.0.0
-        version: 1.0.2
+        version: 1.0.3
       znv:
         specifier: ^0.4.0
         version: 0.4.0(zod@3.24.1)
@@ -1866,6 +1866,7 @@ packages:
   encoding-down@6.3.0:
     resolution: {integrity: sha512-QKrV0iKR6MZVJV08QY0wp1e7vF6QbhnbQhb07bwpEyuz4uZiZgPlEGdkCROuFkUwdxlFaiPIhjyarH1ee/3vhw==}
     engines: {node: '>=6'}
+    deprecated: Superseded by abstract-level (https://github.com/Level/community#faq)
 
   encoding-sniffer@0.2.0:
     resolution: {integrity: sha512-ju7Wq1kg04I3HtiYIOrUrdfdDvkyO9s5XM8QAj/bN61Yo/Vb4vgJxy5vi4Yxk01gWHbrofpPtpxM8bKger9jhg==}
@@ -2262,6 +2263,7 @@ packages:
   level-codec@9.0.2:
     resolution: {integrity: sha512-UyIwNb1lJBChJnGfjmO0OR+ezh2iVu1Kas3nvBS/BzGnx79dv6g7unpKIDNPMhfdTEGoc7mC8uAu51XEtX+FHQ==}
     engines: {node: '>=6'}
+    deprecated: Superseded by level-transcoder (https://github.com/Level/community#faq)
 
   level-concat-iterator@2.0.1:
     resolution: {integrity: sha512-OTKKOqeav2QWcERMJR7IS9CUo1sHnke2C0gkSmcR7QuEtFNLLzHQAvnMw8ykvEcv0Qtkg0p7FOwP1v9e5Smdcw==}
@@ -2953,8 +2955,8 @@ packages:
     resolution: {integrity: sha512-IY1rnGr6izd10B0A8LqsBfmlT5OILVuZ7XsI0vdGPEvuonFV7NYEUK4dAkm9Zg2q0Um92kYjTpS1CAP3Nh/KWw==}
     engines: {node: '>=16'}
 
-  swapy@1.0.2:
-    resolution: {integrity: sha512-UqLiHva+7HHzDUzVe1+cqrkivHcUx8/KJOqVT+eyZGS/SCOX/lPbOMroJ6KzxN6rj4PYxx9BWSUX/ZQhL0n8ig==}
+  swapy@1.0.3:
+    resolution: {integrity: sha512-1vjW82TgNdQbufqI+JhWDhvrSu4hZr9Jmmzw15U8XQSvh1cHPjmrZFQiT3/Wlv30ouqcUbZhAdakZFMTVuBwfg==}
 
   symbol-tree@3.2.4:
     resolution: {integrity: sha512-9QNk5KwDF+Bvz+PyObkmSYjI5ksVUYtjW7AU22r2NKcfLJcXp96hkDWU3+XndOsUb+AQ9QhfzfCT2O+CNWT5Tw==}
@@ -5780,7 +5782,7 @@ snapshots:
       magic-string: 0.30.11
       periscopic: 3.1.0
 
-  swapy@1.0.2: {}
+  swapy@1.0.3: {}
 
   symbol-tree@3.2.4: {}
 
