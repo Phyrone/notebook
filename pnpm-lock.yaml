@@ -143,7 +143,7 @@ importers:
         version: 3.4.2
       prettier-plugin-svelte:
         specifier: ^3.2.7
-        version: 3.3.1(prettier@3.4.2)(svelte@4.2.19)
+        version: 3.3.2(prettier@3.4.2)(svelte@4.2.19)
       sass:
         specifier: ^1.79.2
         version: 1.83.1
@@ -2686,8 +2686,8 @@ packages:
   pouchdb@9.0.0:
     resolution: {integrity: sha512-6wjFc/PzwaWz86rmMXoqdBlR/fBSkNoWO1mEJO7RZNS6n3xf+fhhXWAWtws741KpLKx84IkmmJ48tp+fhFzj4A==}
 
-  prettier-plugin-svelte@3.3.1:
-    resolution: {integrity: sha512-AIKwXYBGm+f0l0DUcQRWjeQj8xm1cVBIZGshvlfiCuesEfueF1TGqz88NP0cr95Ar7Xvt0Ef7h9LFzGdkHr+gA==}
+  prettier-plugin-svelte@3.3.2:
+    resolution: {integrity: sha512-kRPjH8wSj2iu+dO+XaUv4vD8qr5mdDmlak3IT/7AOgGIMRG86z/EHOLauFcClKEnOUf4A4nOA7sre5KrJD4Raw==}
     peerDependencies:
       prettier: ^3.0.0
       svelte: ^3.2.0 || ^4.0.0-next.0 || ^5.0.0-next.0
@@ -5440,7 +5440,7 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
-  prettier-plugin-svelte@3.3.1(prettier@3.4.2)(svelte@4.2.19):
+  prettier-plugin-svelte@3.3.2(prettier@3.4.2)(svelte@4.2.19):
     dependencies:
       prettier: 3.4.2
       svelte: 4.2.19
