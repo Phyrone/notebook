@@ -54,8 +54,8 @@ importers:
         specifier: ^24.0.0
         version: 24.2.0(typescript@5.7.3)
       lucide-svelte:
-        specifier: ^0.473.0
-        version: 0.473.0(svelte@4.2.19)
+        specifier: ^0.474.0
+        version: 0.474.0(svelte@4.2.19)
       maska:
         specifier: ^3.0.2
         version: 3.0.4
@@ -2381,8 +2381,8 @@ packages:
   ltgt@2.2.1:
     resolution: {integrity: sha512-AI2r85+4MquTw9ZYqabu4nMwy9Oftlfa/e/52t9IjtfG+mGBbTNdAoZ3RQKLHR6r0wQnwZnPIEh/Ya6XTWAKNA==}
 
-  lucide-svelte@0.473.0:
-    resolution: {integrity: sha512-Lw2+vrDmVlz/WC1/KcuCEV/1ENrHtChw4GH1cssMbbpdUFyVjZkt9S+7olCOGW8jOZJOrzZNfefV1DdaDw46jQ==}
+  lucide-svelte@0.474.0:
+    resolution: {integrity: sha512-yOSqjXPoEDOXCceBIfDaed6RinOvhp03ShiTXH6O+vlXE/NsyjQpktL8gm2vGDxi9d81HMuPFN1dwhVURh6mGg==}
     peerDependencies:
       svelte: ^3 || ^4 || ^5.0.0-next.42
 
@@ -5194,7 +5194,7 @@ snapshots:
 
   ltgt@2.2.1: {}
 
-  lucide-svelte@0.473.0(svelte@4.2.19):
+  lucide-svelte@0.474.0(svelte@4.2.19):
     dependencies:
       svelte: 4.2.19
 
