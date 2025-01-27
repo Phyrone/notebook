@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@editorjs/editorjs':
         specifier: ^2.30.6
-        version: 2.30.7
+        version: 2.30.8
       '@iconify/svelte':
         specifier: ^4.0.2
         version: 4.2.0(svelte@4.2.19)
@@ -221,8 +221,8 @@ packages:
   '@drizzle-team/brocli@0.10.2':
     resolution: {integrity: sha512-z33Il7l5dKjUgGULTqBsQBQwckHh5AbIuxhdsIxDDiZAzBOrZO6q9ogcWC65kU382AfynTfgNumVcNIjuIua6w==}
 
-  '@editorjs/editorjs@2.30.7':
-    resolution: {integrity: sha512-FfdeUqrgcKWC+Cy2GW6Dxup6s2TaRKokR4FL+HKXshu6h9Y//rrx4SQkURgkZOCSbV77t9btbmAXdFXWGB+diw==}
+  '@editorjs/editorjs@2.30.8':
+    resolution: {integrity: sha512-ClFuxI1qZTfXPJTacQfsJtOUP6bKoIe6BQNdAvGsDTDVwMnZEzoaSOwvUpdZEE56xppVfQueNK/1MElV9SJKHg==}
 
   '@esbuild-kit/core-utils@3.3.2':
     resolution: {integrity: sha512-sPRAnw9CdSsRmEtnsl2WXWdyquogVpB3yZ3dgwJfe8zrOzTsV7cJvmwrKVa+0ma5BoiGJ+BoqkMvawbayKUsqQ==}
@@ -3299,7 +3299,7 @@ snapshots:
 
   '@drizzle-team/brocli@0.10.2': {}
 
-  '@editorjs/editorjs@2.30.7': {}
+  '@editorjs/editorjs@2.30.8': {}
 
   '@esbuild-kit/core-utils@3.3.2':
     dependencies:
